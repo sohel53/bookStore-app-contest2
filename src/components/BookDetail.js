@@ -6,7 +6,7 @@ const BookDetail = ({ book, onClose }) => {
       <div className="close-btn" onClick={onClose}>
         Close
       </div>
-      <img src={book.thumbnail} alt={book.title} />
+      <img src={book.imageLinks.thumbnail} alt={book.title} />
       <h2>{book.title}</h2>
       <p>{book.description}</p>
       <a href={book.previewLink} target="_blank" rel="noopener noreferrer">
